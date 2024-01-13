@@ -179,3 +179,40 @@ Manipulating the DOM - Not With React!
 
 // const ul = document.querySelector("ul");
 // ul.remove();
+
+/*------------------
+Using Functions as Values
+------------------*/
+
+// function timeoutMessage1() {
+//   console.log("First Timeout!");
+// }
+
+// const timeoutMessage2 = () => {
+//   console.log("Second Timeout!");
+// };
+
+// setTimeout(timeoutMessage1, 2000);
+// setTimeout(timeoutMessage2, 3000);
+// setTimeout(() => {
+//   console.log("Third Timeout!");
+// }, 4000);
+
+// function greeting(greetingFn) {
+//   greetingFn();
+// }
+
+// greeting(() => console.log("Hi"));
+
+/*------------------
+Defining Functions Inside Of Functions
+------------------*/
+
+// function init() {
+//   function greeting() {
+//     console.log("Hi");
+//   }
+//   greeting();
+// }
+
+// init();
