@@ -17,10 +17,10 @@ import & export
 Revisiting Variables & Values
 ------------------*/
 
-let userName = "Majd Hemud";
-let age = 27;
+// let userName = "Majd Hemud";
+// let age = 27;
 
-const ssn = "123-45-6789";
+// const ssn = "123-45-6789";
 
 // console.log(userName);
 // console.log(age);
@@ -30,8 +30,8 @@ const ssn = "123-45-6789";
 Revisiting Operators
 ------------------*/
 
-let x = 10;
-let y = 20;
+// let x = 10;
+// let y = 20;
 
 // console.log(x + y);
 // console.log(x - y);
@@ -40,73 +40,112 @@ let y = 20;
 // console.log(x % y);
 // console.log(x ** y);
 
-if (x > y) {
-  console.log("x is greater than y");
-} else {
-  console.log("x is not greater than y");
-}
+// if (x > y) {
+//   console.log("x is greater than y");
+// } else {
+//   console.log("x is not greater than y");
+// }
 
-let firstName = "Majd";
-let lastName = "Hemud";
+// let firstName = "Majd";
+// let lastName = "Hemud";
 
-console.log(firstName + " " + lastName);
+// console.log(firstName + " " + lastName);
 
 /*------------------
 Revisiting Functions & Parameters
 ------------------*/
 
-function createGreeting(name, message = "Hello") {
-  return `${message} ${name}!`;
-}
+// function createGreeting(name, message = "Hello") {
+//   return `${message} ${name}!`;
+// }
 
-const greeting = createGreeting("Majd");
-console.log(greeting);
+// const greeting = createGreeting("Majd");
+// console.log(greeting);
 
-const greeting2 = createGreeting("Majd", "Hi");
-console.log(greeting2);
+// const greeting2 = createGreeting("Majd", "Hi");
+// console.log(greeting2);
 
 /*------------------
 Revisiting Objects & Classes
 ------------------*/
 
-const person = {
-  name: "Majd",
-  age: 27,
-  greet() {
-    console.log(`Hello, my name is ${this.name}`);
-  },
-};
+// const person = {
+//   name: "Majd",
+//   age: 27,
+//   greet() {
+//     console.log(`Hello, my name is ${this.name}`);
+//   },
+// };
 
 // person.greet();
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
 
-  greet() {
-    console.log(`Hi, my name is ${this.name}`);
-  }
-}
+//   greet() {
+//     console.log(`Hi, my name is ${this.name}`);
+//   }
+// }
 
-const person2 = new Person("Majd", 27);
+// const person2 = new Person("Majd", 27);
 // person2.greet();
 
 /*------------------
 Arrays & Array Methods like map()
 ------------------*/
 
-const people = ["Majd", "Sam", "John"];
+// const people = ["Majd", "Sam", "John"];
 
-people.push("Sarah");
+// people.push("Sarah");
 
-console.log(people);
+// console.log(people);
 
-const sarahIndex = people.findIndex((person) => person === "Sarah");
+// const sarahIndex = people.findIndex((person) => person === "Sarah");
 
-console.log(sarahIndex);
+// console.log(sarahIndex);
 
-const peopleEdited = people.map((person) => ({ name: person }));
+// const peopleEdited = people.map((person) => ({ name: person }));
 
-console.log(peopleEdited);
+// console.log(peopleEdited);
+
+/*------------------
+Destructuring
+------------------*/
+
+// const [firstName, lastName] = ["Majd", "Hemud"];
+
+// console.log(firstName);
+// console.log(lastName);
+
+// const { name: userName, age } = {
+//   name: "Majd",
+//   age: 27,
+// };
+
+// console.log(userName);
+// console.log(age);
+
+/*------------------
+The Spread Operator
+------------------*/
+// const user = {
+//   name: "Majd",
+//   age: 27,
+// };
+
+// const extendedUser = {
+//   ...user,
+//   country: "USA",
+// };
+
+// console.log(extendedUser);
+
+// const users1 = ["Majd", "Sam", "John"];
+// const users2 = ["Sarah", "Jane"];
+
+// const mergedUsers = [...users1, ...users2];
+
+// console.log(mergedUsers);
