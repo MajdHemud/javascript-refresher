@@ -149,3 +149,33 @@ The Spread Operator
 // const mergedUsers = [...users1, ...users2];
 
 // console.log(mergedUsers);
+
+/*------------------
+Revisiting Control Structures
+------------------*/
+
+// const password = prompt("Enter your password");
+
+// if (password === "1234") {
+//   console.log("Access granted");
+// } else if (password === "password") {
+//   console.log("default Access granted");
+// } else {
+//   console.log("Access denied");
+// }
+
+// const hobbies = ["Sports", "Cooking"];
+
+// for (const hobby of hobbies) {
+//   console.log(hobby);
+// }
+
+/*------------------
+Manipulating the DOM - Not With React!
+------------------*/
+
+// const h1 = document.querySelector("h1");
+// h1.textContent = "Hello, World!";
+
+// const ul = document.querySelector("ul");
+// ul.remove();
