@@ -64,3 +64,49 @@ console.log(greeting);
 
 const greeting2 = createGreeting("Majd", "Hi");
 console.log(greeting2);
+
+/*------------------
+Revisiting Objects & Classes
+------------------*/
+
+const person = {
+  name: "Majd",
+  age: 27,
+  greet() {
+    console.log(`Hello, my name is ${this.name}`);
+  },
+};
+
+// person.greet();
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hi, my name is ${this.name}`);
+  }
+}
+
+const person2 = new Person("Majd", 27);
+// person2.greet();
+
+/*------------------
+Arrays & Array Methods like map()
+------------------*/
+
+const people = ["Majd", "Sam", "John"];
+
+people.push("Sarah");
+
+console.log(people);
+
+const sarahIndex = people.findIndex((person) => person === "Sarah");
+
+console.log(sarahIndex);
+
+const peopleEdited = people.map((person) => ({ name: person }));
+
+console.log(peopleEdited);
